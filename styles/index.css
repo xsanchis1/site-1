@@ -189,7 +189,7 @@ cursor: pointer;
     div.content-1,
     div.content-2,
     div.content-3 {
-        margin: 40px 15px 40px 15px;
+        margin: 30px 15px 30px 15px;
         padding: 15px 30px;
     }
 
@@ -197,7 +197,7 @@ cursor: pointer;
     div.content-2:hover,
     div.content-3:hover {
         padding: 15px 30px;
-        margin: 40px 15px 40px 15px;
+        margin: 30px 15px 30px 15px;
 
     }
     
