@@ -151,6 +151,14 @@ cursor: pointer;
         display: none;
     }
 
+    div.content {
+        margin: 40px 0px 40px 0px;
+    }
+    div.content:hover {
+        padding: 15px 30px;
+        margin: 40px 0px 20px 0px;
+    }
+
 
 
     
