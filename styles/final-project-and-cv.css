@@ -65,26 +65,23 @@ div.header-right-side {
 }
 
 
-div.content-1 {
+div.content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
     padding: 15px 30px;
     margin: 40px;
     transition: padding 0.15s, margin 0.15s;
+    text-align: center;
 }
 
-div.content-1:hover {
+div.content:hover {
     padding: 30px 50px;
     margin: 40px 20px 20px 20px;
 }
 
-div.content-1-left-side {
-    display: flex;
-    flex-direction: column;
-}
 
-h2.content-1-subheading {
+h2.content-subheading {
     color: rgb(0, 0, 0);
     font-size: 60px;
     font-weight: 400;
@@ -92,69 +89,16 @@ h2.content-1-subheading {
     transition: color 0.3s ease-in-out;
 }
 
-h2.content-1-subheading:hover {
+h2.content-subheading:hover {
     color: rgb(179, 221, 80);
     cursor: pointer;
 }
 
-p.content-1-content {
-    color: grey;
-}
-
-div.content-1-right-side {
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
+div.pdf-div {
+    margin: 10px auto 10px auto;
+    width: 100%;
     justify-content: center;
-}
-
-img.picture {
-    width: 80%;
-    object-fit: cover;
-    width: 300px;
-    float: none;
-}
-
-div.content-2 {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 10px 30px;
-    margin: 40px;
-    transition: padding 0.15s, margin 0.15s;
-}
-
-div.content-2:hover {
-    padding: 30px 50px;
-    margin: 20px;
-}
-
-a.link {
-    text-decoration: none;
-    color: grey;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    transition: color 0.15s;
-}
-
-a.link:hover {
-    color: rgb(179, 221, 80);
-
-}
-
-div.content-3 {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 10px 30px;
-    margin: 40px;
-    transition: padding 0.15s, margin 0.15s;
-}
-
-div.content-3:hover {
-    padding: 30px 50px;
-    margin: 20px;
+    align-items: center;
 }
 
 p.contact-content, 
@@ -171,27 +115,31 @@ color: rgb(179, 221, 80);
 cursor: pointer;
 }
 
-@media (max-width: 1000px) {
-    p.content-1-content {
-        font-size: 15px;
-    }
-}
 
 @media (max-width: 768px) {
-    div.content-1 {
-        flex-direction: column; 
+    body {
+        padding-top: 70px;
     }
 
-    img.picture {
-        margin-top: 20px; 
-        float: none;
+    div.content {
+        margin: 40px 15px 40px 15px;
+    }
+
+    div.content:hover {
+        padding: 10px 20px;
+        margin: 40px 10px 20px 10px;
+    }
+
+    h2.content-subheading {
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        font-weight: 400;
+        margin: 0;
+        transition: color 0.3s ease-in-out;
     }
 }
 
 @media (max-width: 720px) {
-    body {
-        padding-top: 70px;
-    }
 
     div.top-header {
         align-items: center;
@@ -203,11 +151,7 @@ cursor: pointer;
         display: none;
     }
 
-    div.content-1,
-    div.content-2,
-    div.content-3 {
-        margin: 40px 15px 40px 15px;
-    }
+
 
     
 
