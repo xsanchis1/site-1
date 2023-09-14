@@ -109,10 +109,8 @@ div.content-1-right-side {
 }
 
 img.picture {
-    width: 70%;
     object-fit: cover;
     width: 300px;
-    float: none;
 }
 
 div.content-2 {
@@ -182,9 +180,20 @@ cursor: pointer;
         flex-direction: column; 
     }
 
+    div.content-1-right-side {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+
     img.picture {
         margin-top: 20px; 
+        width: 70%;
     }
+
+
 
     div.content-1,
     div.content-2,
@@ -218,6 +227,9 @@ cursor: pointer;
         display: none;
     }
     
+    img.picture {
+        width: 80%;
+    }
 }
 
 
